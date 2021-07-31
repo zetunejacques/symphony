@@ -1,7 +1,7 @@
 using System;
 using System.ComponentModel.DataAnnotations;
 
-namespace Models
+namespace Symphony.Models
 {
     public class Lote
     {

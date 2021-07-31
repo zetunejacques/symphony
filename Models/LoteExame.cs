@@ -1,7 +1,6 @@
 using System.ComponentModel.DataAnnotations;
-using Models;
 
-namespace LoteExame
+namespace Symphony.Models
 {
     public class LoteExame
     {
