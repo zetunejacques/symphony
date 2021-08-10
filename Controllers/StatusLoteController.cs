@@ -7,7 +7,7 @@ using Symphony.Models;
 
 namespace Symphony.Controllers
 {
-    [Route("statuslotes")]
+    [Route("v1/interno/statuslotes")]
     public class StatusLoteController : ControllerBase
     {
         [HttpGet]

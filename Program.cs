@@ -7,6 +7,10 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 
+// role lc: token, depara/post, depara/get
+// role softwarehouse
+// role admin
+
 namespace symphony
 {
     public class Program
@@ -21,6 +25,7 @@ namespace symphony
                 .ConfigureWebHostDefaults(webBuilder =>
                 {
                     webBuilder.UseStartup<Startup>();
+                    webBuilder.UseUrls("http://172.19.231.98:5005");
                 });
     }
 }
