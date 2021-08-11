@@ -10,6 +10,7 @@ namespace Symphony.Domain
         public string NomeSoftwareHouse { get; set; }
         public bool RetornarApenasExamesContratados { get; set; }
         public bool RetornarEmOrdemAlfabetica { get; set; }
+        public string Senha { get; set; }
         public List<LisMap> Lises { get; set; }
         public List<LoteMap> Lotes { get; set; }
 

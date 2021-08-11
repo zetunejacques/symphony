@@ -24,12 +24,14 @@ namespace Symphony.Domain
         public string TermoAceite { get; set; }
         public List<ExameMap> Exames { get; set; }
         public List<LoteErroMap> Erros { get; set; }
+        public List<ExamePreConfiguradoMap> ExamesPreConfigurados { get; set; }
 
 
         public LoteMap()
         {
             Exames = new List<ExameMap>();
             Erros = new List<LoteErroMap>();
+            ExamesPreConfigurados = new List<ExamePreConfiguradoMap>();
         }
     }
 }

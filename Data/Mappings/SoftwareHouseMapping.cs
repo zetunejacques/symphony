@@ -13,6 +13,7 @@ namespace Symphony.Data.Mappings
             builder.Property(x => x.NomeSoftwareHouse).HasColumnName(@"NomeSoftwareHouse").HasColumnType("@nvarchar(30)").HasMaxLength(30).IsRequired();
             builder.Property(x => x.RetornarApenasExamesContratados).HasColumnName(@"RetornarApenasExamesContratados").HasColumnType(@"bit").IsRequired();
             builder.Property(x => x.RetornarEmOrdemAlfabetica).HasColumnName(@"RetornarEmOrdemAlfabetica").HasColumnType(@"bit").IsRequired();
+            builder.Property(x => x.Senha).HasColumnName(@"Senha").HasColumnType(@"varchar(20)").HasMaxLength(20).IsRequired();
             builder.HasKey(@"Id");
         }
     }
