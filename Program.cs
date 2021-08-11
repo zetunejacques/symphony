@@ -25,7 +25,7 @@ namespace symphony
                 .ConfigureWebHostDefaults(webBuilder =>
                 {
                     webBuilder.UseStartup<Startup>();
-                    webBuilder.UseUrls("http://172.19.231.98:5005");
+                    //webBuilder.UseUrls("http://172.19.231.98:5005");
                 });
     }
 }

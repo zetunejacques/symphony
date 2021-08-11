@@ -1,4 +1,7 @@
+using System.Globalization;
 using System.Text;
+using FluentValidation;
+using FluentValidation.AspNetCore;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -17,6 +20,7 @@ namespace symphony
         public Startup(IConfiguration configuration)
         {
             Configuration = configuration;
+            ValidatorOptions.Global.LanguageManager.Culture = new CultureInfo("pt-br");
         }
 
         public IConfiguration Configuration { get; }
@@ -24,7 +28,13 @@ namespace symphony
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddControllers();
+            services.AddControllers()
+            .AddFluentValidation(s =>
+                {
+                    s.RegisterValidatorsFromAssemblyContaining<Startup>();
+                    s.DisableDataAnnotationsValidation = true;
+                    //s.RunDefaultMvcValidationAfterFluentValidationExecutes = false;
+                }); ;
             var key = Encoding.ASCII.GetBytes(Settings.Secret);
             services.AddAuthentication(x =>
             {
@@ -46,6 +56,7 @@ namespace symphony
             //services.AddDbContext<DataContext>(opt => opt.UseInMemoryDatabase("Database"));
             services.AddDbContext<DataContext>(opt => opt.UseSqlServer(Configuration.GetConnectionString("connectionString")));
             services.AddScoped<DataContext, DataContext>();
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
