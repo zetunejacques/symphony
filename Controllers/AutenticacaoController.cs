@@ -8,7 +8,7 @@ namespace Symphony.Controllers
     public class AutenticacaoController : ControllerBase
     {
         [HttpGet]
-        [Route("admin")]
+        [Route("interno")]
         [AllowAnonymous]
         public string LoginAdmin()
         {

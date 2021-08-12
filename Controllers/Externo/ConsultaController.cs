@@ -2,7 +2,7 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Authorization;
 
-namespace Symphony.Controllers
+namespace Symphony.Controllers.Externo
 {
     [Route("v2/depara/consultas")]
     public class ConsultaController : ControllerBase

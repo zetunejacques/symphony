@@ -2,7 +2,7 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Authorization;
 
-namespace Symphony.Controllers
+namespace Symphony.Controllers.Externo
 {
     [Route("v2/depara/recursos/tabelalhpv2")]
     public class Tabelalhpv2Controller : ControllerBase
