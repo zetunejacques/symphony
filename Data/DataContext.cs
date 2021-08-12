@@ -23,6 +23,9 @@ namespace Symphony.Data
         public DbSet<StatusExameMap> StatusExame { get; set; }
         public DbSet<StatusLoteMap> StatusLote { get; set; }
         public DbSet<TokenMap> Token { get; set; }
-
+        public DbSet<DeParaMaterialMap> DeParaMaterial { get; set; }
+        public DbSet<ExameMaterialMap> ExameMaterial { get; set; }
+        public DbSet<ExameV2Map> ExameV2 { get; set; }
+        public DbSet<ModeloXmlMap> ModeloXml { get; set; }
     }
 }
