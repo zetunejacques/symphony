@@ -27,5 +27,6 @@ namespace Symphony.Data
         public DbSet<ExameMaterialMap> ExameMaterial { get; set; }
         public DbSet<ExameV2Map> ExameV2 { get; set; }
         public DbSet<ModeloXmlMap> ModeloXml { get; set; }
+        public DbSet<TermoAceiteMap> TermoAceite { get; set; }
     }
 }
