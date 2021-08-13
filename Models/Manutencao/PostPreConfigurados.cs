@@ -1,7 +1,6 @@
 using System.Collections.Generic;
-using Symphony.Models.Comum;
 
-namespace Symphony.Models.Manutencao
+namespace Symphony.Models
 {
     public class PostPreConfigurados
     {

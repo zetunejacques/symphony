@@ -1,6 +1,6 @@
 using System;
 
-namespace Symphony.Models.Comum
+namespace Symphony.Models
 {
     public class TermoAceite
     {

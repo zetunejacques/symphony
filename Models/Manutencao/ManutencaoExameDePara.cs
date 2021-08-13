@@ -1,4 +1,4 @@
-namespace Symphony.Models.Manutencao
+namespace Symphony.Models
 {
     public class ManutencaoExameDePara
     {

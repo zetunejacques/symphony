@@ -1,4 +1,4 @@
-namespace Symphony.Models.Retorno
+namespace Symphony.Models
 {
     public class RetornoExameSuspenso
     {

@@ -1,6 +1,6 @@
 using System.Collections.Generic;
-using Symphony.Models.Comum;
-namespace Symphony.Models.Envio
+
+namespace Symphony.Models
 {
     public class PostDe
     {

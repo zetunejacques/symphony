@@ -1,6 +1,6 @@
 using System.Collections.Generic;
 
-namespace Symphony.Models.Retorno
+namespace Symphony.Models
 {
     public class GetDePara
     {

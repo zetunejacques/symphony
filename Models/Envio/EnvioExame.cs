@@ -1,4 +1,4 @@
-namespace Symphony.Models.Envio
+namespace Symphony.Models
 {
     public class EnvioExame
     {
