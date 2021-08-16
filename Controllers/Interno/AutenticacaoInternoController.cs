@@ -5,7 +5,7 @@ using Microsoft.AspNetCore.Authorization;
 namespace Symphony.Controllers
 {
     [Route("v2/depara/autenticacao")]
-    public class AutenticacaoController : ControllerBase
+    public class AutenticacaoInternoController : ControllerBase
     {
         [HttpGet]
         [Route("interno")]
@@ -13,21 +13,6 @@ namespace Symphony.Controllers
         public string LoginAdmin()
         {
             // autentica o admin e retorna um token
-            return "Admin";
-        }
-        [Route("software-house")]
-        [AllowAnonymous]
-        public string LoginSoftwareHouse()
-        {
-            // autentica a sh e retorna um token
-            return "Admin";
-        }
-
-        [Route("laboratorio-conveniado")]
-        [Authorize(Roles = "admin")]
-        public string ObtemTokenLc()
-        {
-            // retorna um token para um LC
             return "Admin";
         }
 

@@ -7,6 +7,6 @@ namespace Symphony.Models
         public string Mensagem { get; set; }
         public int Status { get; set; }
         public int CodigoLC { get; set; }
-        public List<Lote> Lotes { get; set; }
+        public List<ConsultaLote> Lotes { get; set; }
     }
 }

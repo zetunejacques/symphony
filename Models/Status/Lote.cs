@@ -2,7 +2,7 @@ using System;
 
 namespace Symphony.Models
 {
-    public class Lote
+    public class ConsultaLote
     {
         public string NumeroLote { get; set; }
         public int Statuslote { get; set; }
